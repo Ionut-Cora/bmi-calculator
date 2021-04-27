@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
 }
 
 .App-logo {
@@ -35,4 +37,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#height-enter,
+#weight-enter {
+  display: none;
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 25%;
+  min-height: 50%;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.calculator input {
+  margin: 1rem 0;
+}
+
+#img-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-div img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .calculator {
+    width: 40%;
+  }
+
+  #img-div {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .calculator h1 {
+    font-size: 1.5rem;
+  }
+
+  .calculator {
+    width: 50%;
+  }
+}
+
+#submit-button {
+  width: 50%;
+  height: 30px;
+  background-color: #00e600;
+  font-weight: bold;
+  border-radius: 5%;
+  border: 0;
+}
+
+#submit-button:hover {
+  background-color: #00b300;
+}
+
+.calculator label,
+#result span {
+  font-weight: bold;
 }
