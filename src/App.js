@@ -78,10 +78,10 @@ class App extends React.Component {
         <div className="calculator">
           <h1>BMI Calculator</h1>
           <form onSubmit={(event) => this.handleSubmit(event)}>
-            <label htmlFor="height">Height (metres):</label>
+            <label htmlFor="height">Height (metres ex: 1.755):</label>
             <input type="number" name="height" step="any" onChange={(event) => this.handleHeight(event)} />
             <p id="height-enter">Enter your Height</p>
-            <label htmlFor="weight">Weight (kilograms):</label>
+            <label htmlFor="weight">Weight (kilograms ex: 70):</label>
             <input type="number" name="weight" step="any" onChange={(event) => this.handleWeight(event)} />
             <p id="weight-enter">Enter your Weight</p>
             <input id="submit-button" type="submit" value="Calculate"/>
