@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bmi-calculator/static/css/main.18db783c.chunk.css",
-    "main.js": "/bmi-calculator/static/js/main.35c5ac60.chunk.js",
-    "main.js.map": "/bmi-calculator/static/js/main.35c5ac60.chunk.js.map",
+    "main.js": "/bmi-calculator/static/js/main.bea4d87d.chunk.js",
+    "main.js.map": "/bmi-calculator/static/js/main.bea4d87d.chunk.js.map",
     "runtime-main.js": "/bmi-calculator/static/js/runtime-main.f5a9ba16.js",
     "runtime-main.js.map": "/bmi-calculator/static/js/runtime-main.f5a9ba16.js.map",
     "static/js/2.3bc25dc1.chunk.js": "/bmi-calculator/static/js/2.3bc25dc1.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.f5a9ba16.js",
     "static/js/2.3bc25dc1.chunk.js",
     "static/css/main.18db783c.chunk.css",
-    "static/js/main.35c5ac60.chunk.js"
+    "static/js/main.bea4d87d.chunk.js"
   ]
 }
