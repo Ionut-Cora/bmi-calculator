@@ -1,4 +1,4 @@
-##https://ionut-cora.github.io/bmi-calculator/
+## https://ionut-cora.github.io/bmi-calculator/
 
 # Getting Started with Create React App
 
