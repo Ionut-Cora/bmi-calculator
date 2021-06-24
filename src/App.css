@@ -61,31 +61,15 @@ form {
   width: 25%;
   min-height: 50%;
   margin: auto;
-  border-radius: 5%;
 }
 
 .calculator input {
   margin: 1rem 0;
 }
 
-#img-div {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#img-div img {
-  width: 100%;
-}
-
 @media only screen and (max-width: 900px) {
   .calculator {
     width: 40%;
-  }
-
-  #img-div {
-    display: none;
   }
 }
 
@@ -104,7 +88,6 @@ form {
   height: 30px;
   background-color: #00e600;
   font-weight: bold;
-  border-radius: 5%;
   border: 0;
 }
 

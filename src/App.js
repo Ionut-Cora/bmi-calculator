@@ -91,9 +91,6 @@ class App extends React.Component {
             <p>Category: <span>{this.state.type}</span></p>
           </div>
         </div>
-        <div id="img-div">
-          <img src={bmiChart} alt="bmi-chart"/>
-        </div>
       </div>
     );
   }
