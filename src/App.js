@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import bmiChart from './images/bmi-chart.png';
 
 class App extends React.Component {
   constructor() {
