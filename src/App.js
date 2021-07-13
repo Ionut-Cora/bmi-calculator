@@ -25,7 +25,7 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    let total = this.state.weight / (this.state.height * this.state.height);
+    let total = (this.state.weight / (this.state.height * this.state.height)) * 10000;
     let totalPrecision = total.toPrecision(4);
     this.setState({total: totalPrecision});
 
@@ -77,10 +77,10 @@ class App extends React.Component {
         <div className="calculator">
           <h1>BMI Calculator</h1>
           <form onSubmit={(event) => this.handleSubmit(event)}>
-            <label htmlFor="height">Height (metres ex: 1.755):</label>
+            <label htmlFor="height">Height (cm):</label>
             <input type="number" name="height" step="any" onChange={(event) => this.handleHeight(event)} />
             <p id="height-enter">Enter your Height</p>
-            <label htmlFor="weight">Weight (kilograms ex: 70):</label>
+            <label htmlFor="weight">Weight (kg):</label>
             <input type="number" name="weight" step="any" onChange={(event) => this.handleWeight(event)} />
             <p id="weight-enter">Enter your Weight</p>
             <input id="submit-button" type="submit" value="Calculate"/>

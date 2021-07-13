@@ -57,17 +57,59 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  background-color: #000000d0;
   width: 25%;
   min-height: 50%;
   margin: auto;
 }
 
-.calculator input {
-  margin: 1rem 0;
+.calculator h1,
+.calculator label, 
+.calculator p {
+  color: #fff;
 }
 
-@media only screen and (max-width: 900px) {
+.calculator input {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.calculator input:focus {
+  outline: none;
+}
+
+#submit-button {
+  background-color: #00e600;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+
+#submit-button:hover {
+  background-color: #00b300;
+  cursor: pointer;
+}
+
+.calculator label,
+#result span {
+  font-weight: bold;
+}
+
+#result span {
+  font-size: 1.2rem;
+}
+
+#height-enter,
+#weight-enter {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
   .calculator {
     width: 40%;
   }
@@ -79,23 +121,6 @@ form {
   }
 
   .calculator {
-    width: 50%;
+    width: 80%;
   }
-}
-
-#submit-button {
-  width: 50%;
-  height: 30px;
-  background-color: #00e600;
-  font-weight: bold;
-  border: 0;
-}
-
-#submit-button:hover {
-  background-color: #00b300;
-}
-
-.calculator label,
-#result span {
-  font-weight: bold;
 }
