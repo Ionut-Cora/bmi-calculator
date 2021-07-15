@@ -2,6 +2,7 @@
   text-align: center;
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -109,6 +110,11 @@ form {
   margin-bottom: 1rem;
 }
 
+footer {
+  background-color: #000000d0;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1000px) {
   .calculator {
     width: 40%;
@@ -116,11 +122,17 @@ form {
 }
 
 @media only screen and (max-width: 700px) {
+
+  .calculator {
+    width: 80%;
+  }
+
   .calculator h1 {
     font-size: 1.5rem;
   }
 
-  .calculator {
-    width: 80%;
+  .calculator,
+  #submit-button {
+    border-radius: 0;
   }
 }

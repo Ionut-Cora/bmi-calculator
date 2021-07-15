@@ -90,6 +90,9 @@ class App extends React.Component {
             <p>Category: <span>{this.state.type}</span></p>
           </div>
         </div>
+        <footer>
+          <p>&copy; made by Ionut Cora, 2021</p> 
+        </footer>
       </div>
     );
   }
