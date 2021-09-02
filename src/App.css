@@ -64,6 +64,7 @@ form {
   width: 25%;
   min-height: 50%;
   margin: auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 .calculator h1,
@@ -75,6 +76,7 @@ form {
 .calculator input {
   margin: 1rem 0;
   padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .calculator input:focus {
@@ -82,16 +84,18 @@ form {
 }
 
 #submit-button {
-  background-color: #00e600;
+  background-color: #00e6bf;
   font-weight: bold;
   border: 0;
   border-radius: 5px;
   text-transform: uppercase;
   padding: 1rem 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 30px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 #submit-button:hover {
-  background-color: #00b300;
+  background-color: #00C9A7;
   cursor: pointer;
 }
 
@@ -132,6 +136,7 @@ footer {
   }
 
   .calculator,
+  .calculator input,
   #submit-button {
     border-radius: 0;
   }

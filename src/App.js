@@ -35,31 +35,31 @@ class App extends React.Component {
 
     if (totalPrecision <= 18.5) {
       this.setState({type: "Underweight"});
-      wallpaper.style.backgroundImage = 'linear-gradient(blue, lightblue)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#2C73D2, #D5ECF5)';
     } else if (totalPrecision > 18.5 && totalPrecision <= 24.9) {
       this.setState({type: "Healthy Weight"});
-      wallpaper.style.backgroundImage = 'linear-gradient(green, yellow)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#00C9A7, #F9F871)';
     } else if (totalPrecision >= 25 && totalPrecision <= 29.9) {
       this.setState({type: "Overweight"});
-      wallpaper.style.backgroundImage = 'linear-gradient(orange, yellow)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#FFC75F, #F9F871)';
     } else if (totalPrecision >= 30) {
       this.setState({type: "Obese"});
-      wallpaper.style.backgroundImage = 'linear-gradient(red, orange)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#D43725, #FFC75F)';
     } else {
       this.setState({type: ""});
-      wallpaper.style.backgroundImage = 'linear-gradient(beige, white)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#B39CD0, #FBEAFF)';
     }
 
     if (this.state.height === "") {
       heightEnter.style.display = 'block';
-      wallpaper.style.backgroundImage = 'linear-gradient(beige, white)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#B39CD0, #FBEAFF)';
     } else {
       heightEnter.style.display = 'none';
     }
 
     if (this.state.weight === "") {
       weightEnter.style.display = 'block';
-      wallpaper.style.backgroundImage = 'linear-gradient(beige, white)';
+      wallpaper.style.backgroundImage = 'linear-gradient(#B39CD0, #FBEAFF)';
     } else {
       weightEnter.style.display = 'none';
     }
