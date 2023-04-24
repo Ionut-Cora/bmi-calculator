@@ -30,8 +30,10 @@ class App extends React.Component {
     this.setState({total: totalPrecision});
 
     let wallpaper = document.querySelector('body');
-    let heightEnter = document.querySelector('#height-enter');
-    let weightEnter = document.querySelector('#weight-enter');
+    const height = document.getElementById('height');
+    const weight = document.getElementById('weight');
+    // let heightEnter = document.querySelector('#height-enter');
+    // let weightEnter = document.querySelector('#weight-enter');
 
     if (totalPrecision <= 18.5) {
       this.setState({type: "Underweight"});
@@ -51,17 +53,21 @@ class App extends React.Component {
     }
 
     if (this.state.height === "") {
-      heightEnter.style.display = 'block';
+      // heightEnter.style.display = 'block';
+      height.classList.add('error-class');
       wallpaper.style.backgroundImage = 'linear-gradient(#B39CD0, #FBEAFF)';
     } else {
-      heightEnter.style.display = 'none';
+      height.classList.remove('error-class');
+      // heightEnter.style.display = 'none';
     }
 
     if (this.state.weight === "") {
-      weightEnter.style.display = 'block';
+      // weightEnter.style.display = 'block';
+      weight.classList.add('error-class');
       wallpaper.style.backgroundImage = 'linear-gradient(#B39CD0, #FBEAFF)';
     } else {
-      weightEnter.style.display = 'none';
+      weight.classList.remove('error-class');
+      // weightEnter.style.display = 'none';
     }
 
     if (isNaN(total) || this.state.height === "" || this.state.weight === "") {
@@ -78,11 +84,11 @@ class App extends React.Component {
           <h1>BMI Calculator</h1>
           <form onSubmit={(event) => this.handleSubmit(event)}>
             <label htmlFor="height">Height (cm):</label>
-            <input type="number" name="height" step="any" onChange={(event) => this.handleHeight(event)} />
-            <p id="height-enter">Enter your Height</p>
+            <input type="number" name="height" id='height' step="any" onChange={(event) => this.handleHeight(event)} />
+            {/* <p id="height-enter">Enter your Height</p> */}
             <label htmlFor="weight">Weight (kg):</label>
-            <input type="number" name="weight" step="any" onChange={(event) => this.handleWeight(event)} />
-            <p id="weight-enter">Enter your Weight</p>
+            <input type="number" name="weight" id='weight' step="any" onChange={(event) => this.handleWeight(event)} />
+            {/* <p id="weight-enter">Enter your Weight</p> */}
             <input id="submit-button" type="submit" value="Calculate"/>
           </form>
           <div id="result">
@@ -91,7 +97,7 @@ class App extends React.Component {
           </div>
         </div>
         <footer>
-          <p>&copy; made by Ionut Cora, 2021</p> 
+          <p>&copy; made by Ionut Cora, 2021 - 2023</p> 
         </footer>
       </div>
     );

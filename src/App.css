@@ -40,11 +40,11 @@
   }
 }
 
-#height-enter,
+/* #height-enter,
 #weight-enter {
   display: none;
   color: red;
-}
+} */
 
 form {
   display: flex;
@@ -77,10 +77,20 @@ form {
   margin: 1rem 0;
   padding: 0.5rem;
   border-radius: 5px;
+  border: 0;
 }
 
 .calculator input:focus {
   outline: none;
+}
+
+.calculator .error-class {
+  border: 1px solid #d93025;
+  box-shadow: 0 .1rem 1rem #d93025;
+  -webkit-box-shadow: 0 .1rem 1rem #d93025; 
+  -moz-box-shadow: 0 .1rem 1rem #d93025;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 #submit-button {
