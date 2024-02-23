@@ -66,6 +66,22 @@ form {
   min-height: 50%;
   margin: auto;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: relative;
+}
+
+.calculator::before {
+  background: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  pointer-events: none;
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
 }
 
 .calculator h1,
