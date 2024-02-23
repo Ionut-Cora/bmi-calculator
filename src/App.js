@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor() {
@@ -96,9 +97,7 @@ class App extends React.Component {
             <p>Category: <span>{this.state.type}</span></p>
           </div>
         </div>
-        <footer>
-          <p>&copy; made by Ionut Cora, 2021 - 2023</p> 
-        </footer>
+        <Footer />
       </div>
     );
   }

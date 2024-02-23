@@ -147,11 +147,4 @@ footer {
   .calculator h1 {
     font-size: 1.5rem;
   }
-
-  /* .calculator,
-  .calculator input,
-  #submit-button {
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  } */
 }
