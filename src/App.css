@@ -68,7 +68,7 @@ form {
   -webkit-border-radius: 20px;
   padding: 2rem 1rem;
   background-color: #000000d0;
-  width: 25%;
+  width: 35%;
   min-height: 50%;
   margin: auto;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
@@ -94,6 +94,10 @@ form {
 .calculator label, 
 .calculator p {
   color: #fff;
+}
+
+.calculator label span {
+  text-transform: uppercase;
 }
 
 .calculator input {
@@ -134,12 +138,8 @@ form {
   cursor: pointer;
 }
 
-.calculator label,
 #result span {
   font-weight: bold;
-}
-
-#result span {
   font-size: 1.2rem;
 }
 
@@ -156,7 +156,7 @@ footer {
 
 @media only screen and (max-width: 1000px) {
   .calculator {
-    width: 40%;
+    width: 50%;
   }
 }
 
