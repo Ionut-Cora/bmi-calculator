@@ -2,11 +2,11 @@
 
 ## View live website: https://ionut-cora.github.io/bmi-calculator/
 
-<img src="BMI Calculator App Img.jpg" alt="BMI Calculator App" />
+<img src="BMI Calculator App.jpg" alt="BMI Calculator App" />
 
 ## For this app I used:
-- [React](https://react.dev/)
-- CSS
+- [React JS](https://react.dev/) - Front End JavaScript library
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Cascading Style Sheets
 
 ## App description
 This app help the users by checking their body mass index (BMI) and find out if they have a healthy weight. After users complete the height and weight inputs fields with their own data, will be displayed their BMI result and the category where they belong to. These categories will also change the background color, depending on the BMI result and the category.
